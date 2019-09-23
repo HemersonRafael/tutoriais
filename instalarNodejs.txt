@@ -1,0 +1,36 @@
+###Instalação do NodeJS por meio do NVM
+
+#Para iniciar o processo de instalção acesse a pasta de área de trabalho:
+
+cd Área\ de\ Trabalho/
+
+#Para baixar o arquivo:
+
+wget -O install.sh https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+
+#Comando para permitir a execução do script em bash:
+
+sudo chmod +x install.sh
+
+#Execute o script:
+
+./install.sh
+
+# Agora para podermos acessar as funções do NVM temos que reiniciar o Terminal, é só fechá-lo e abri-lo novamente.
+
+
+#Confira se a instalação foi realizada com sucesso com o comando que retorna a versão instalada:
+
+nvm --version
+
+#Para ver a lista de versões do node utilize, recomeda-se utilizar a Latest LTS
+
+nvm ls-remote
+
+#Depois de conferir a ultima versão LTS que neste caso foi a v10.16.3, instale com comando abaixo:
+
+nvm install 10.16.3
+
+#Teste a instalação com comandos abaixo:
+node -v
+npm -v
